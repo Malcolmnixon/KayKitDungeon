@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://w66fgr5pqkdx"]
+
+[ext_resource type="PackedScene" uid="uid://ccoykai8k3qvm" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/stairs_wall_right.gltf.glb" id="1_bdi7d"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kpaa2"]
+points = PackedVector3Array(2, 0.5, -0.25, 2, 0.25, -0.5, -2, 0.5, -0.25, 2, 0, -0.25, 2, 0, -0.5, -2, 0.25, -0.5, -2, 0, -0.25, -2, 0, -0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mevw8"]
+points = PackedVector3Array(2, 0.5, 4.25, 2, 0.25, 4.5, 2, 0, 4.25, -2, 0.5, 4.25, 2, 0, 4.5, -2, 0.25, 4.5, -2, 0, 4.25, -2, 0, 4.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vft3u"]
+points = PackedVector3Array(-2, 3.44996, -0.5, -2, 3.99992, -0.5, 2, 3.44996, -0.5, -2, 3.2, -0.25, -2, 3.99992, 0.5, 2, 3.99992, -0.5, 2, 3.2, -0.25, -2, 3.2, 0.25, -2, 3.44996, 0.5, 2, 3.99992, 0.5, 2, 3.2, 0.25, 2, 3.44996, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8fw5i"]
+points = PackedVector3Array(2, 3.99961, 4.25, 2, -4.17233e-07, 4.25, 2, 3.99961, -0.25, 1.59988, 3.99961, 4.25, -2.4, -4.17233e-07, 4.25, 2, -4.17233e-07, -0.25, 1.59988, 3.99961, -0.25, -2.4, -4.17233e-07, -0.25)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t5h06"]
+points = PackedVector3Array(1.6, 4, 0.25, 1.6, 4, -0.25, -2, 4, 0.25, -2, 0.4, 0.25, -2, 0.4, -0.25, -2, 4, -0.25)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u8g3j"]
+points = PackedVector3Array(-2, 0.4, 3.75, -2, 0.4, 4.25, -2, 1.07491, 3.75, 2, 3.99999, 3.75, -2, 1.07491, 4.24995, 2, 3.99999, 4.25, 2, 5.0747, 4.25, -2, 1.09976, 3.81245, 2, 5.0747, 3.75, -2, 1.09976, 4.1875, 2, 5.09954, 4.1875, 2, 5.09954, 3.81245)
+
+[node name="StairsWallRight" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_kpaa2")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_mevw8")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_vft3u")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_8fw5i")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_t5h06")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_u8g3j")
+
+[node name="stairs_wall_right_gltf" parent="." instance=ExtResource("1_bdi7d")]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=198 format=3 uid="uid://cvdc2newyrcc5"]
 
-[ext_resource type="PackedScene" uid="uid://b0h0njt18b3jk" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/rubble_half.gltf.glb" id="1_423uy"]
-[ext_resource type="PackedScene" uid="uid://757t7icf5r1i" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/rubble_large.gltf.glb" id="2_3bdxt"]
+[ext_resource type="PackedScene" uid="uid://b6arjc61m1qq8" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/rubble_half.tscn" id="1_gbqyg"]
+[ext_resource type="PackedScene" uid="uid://drqcoe50sjwok" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/rubble_large.tscn" id="2_dadrp"]
 [ext_resource type="PackedScene" uid="uid://btni2wkkcke4c" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_patternA_red.gltf.glb" id="3_qmka6"]
 [ext_resource type="PackedScene" uid="uid://q1eh3scn2rpe" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_patternB_red.gltf.glb" id="4_afu8b"]
 [ext_resource type="PackedScene" uid="uid://dofqwks6q7n60" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_patternC_red.gltf.glb" id="5_46mpa"]
@@ -44,19 +44,6 @@
 [ext_resource type="PackedScene" uid="uid://ddxsfr0xcpgif" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_thin_yellow.gltf.glb" id="42_gkgt6"]
 [ext_resource type="PackedScene" uid="uid://c1hjfotnnl2c5" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_triple_yellow.gltf.glb" id="43_pdhdc"]
 [ext_resource type="PackedScene" uid="uid://c3i6o0ab1rrfs" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/banner_yellow.gltf.glb" id="44_hxlv4"]
-[ext_resource type="PackedScene" uid="uid://myow0e4lp03p" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/box_small_decorated.gltf.glb" id="45_rvyx4"]
-[ext_resource type="PackedScene" uid="uid://jwgwv38j83uh" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/bed_decorated.gltf.glb" id="46_5444m"]
-[ext_resource type="PackedScene" uid="uid://mh2iw6g8kwyj" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/box_stacked.gltf.glb" id="47_qltwx"]
-[ext_resource type="PackedScene" uid="uid://cjrfno431g8fp" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrel_large_decorated.gltf.glb" id="48_krh8q"]
-[ext_resource type="PackedScene" uid="uid://cbxe1rfnu2d42" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/crates_stacked.gltf.glb" id="49_6rbct"]
-[ext_resource type="PackedScene" uid="uid://mgp26vjucle7" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/keg_decorated.gltf.glb" id="50_bb3f8"]
-[ext_resource type="PackedScene" uid="uid://vl7iccj8htyu" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle_thin_lit.gltf.glb" id="51_mn42c"]
-[ext_resource type="PackedScene" uid="uid://cjolbcsw0w3um" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle_lit.gltf.glb" id="52_71dad"]
-[ext_resource type="PackedScene" uid="uid://frdbia8fftv8" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle_thin.gltf.glb" id="53_l4tlw"]
-[ext_resource type="PackedScene" uid="uid://cki6c1ruk6n8g" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle.gltf.glb" id="54_1vd8o"]
-[ext_resource type="PackedScene" uid="uid://ddh0n57acgjjj" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle_melted.gltf.glb" id="55_ipg6p"]
-[ext_resource type="PackedScene" uid="uid://ym510ombltbc" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/candle_triple.gltf.glb" id="56_vblr4"]
-[ext_resource type="PackedScene" uid="uid://1if7mkru388d" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/torch_lit.gltf.glb" id="57_np4mx"]
 [ext_resource type="PackedScene" uid="uid://fjaynbv2xy31" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/torch.gltf.glb" id="58_ekn8j"]
 [ext_resource type="PackedScene" uid="uid://coc76qo8qu00t" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/torch_mounted.gltf.glb" id="59_33gl7"]
 [ext_resource type="PackedScene" uid="uid://cy187jvqjbasi" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/bottle_C_brown.gltf.glb" id="60_f1v0p"]
@@ -121,22 +108,35 @@
 [ext_resource type="PackedScene" uid="uid://ckkhw4a740as7" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/stool.gltf.glb" id="118_8uf5k"]
 [ext_resource type="PackedScene" uid="uid://dthelxwi37f1d" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/bed_frame.gltf.glb" id="120_24j5b"]
 [ext_resource type="PackedScene" uid="uid://c8ys6ps6mtf6x" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/bed_floor.gltf.glb" id="121_i531f"]
+[ext_resource type="PackedScene" uid="uid://cc0uc2367i1qw" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/box_small_decorated.tscn" id="121_jywlr"]
+[ext_resource type="PackedScene" uid="uid://15sl0u1etsnl" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/bed_decorated.tscn" id="122_17s4s"]
 [ext_resource type="PackedScene" uid="uid://dlfd5pss1vwj5" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrier_corner.gltf.glb" id="122_miwxm"]
 [ext_resource type="PackedScene" uid="uid://co7nsamd1nstm" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrier_column.gltf.glb" id="123_skqke"]
+[ext_resource type="PackedScene" uid="uid://bsp42we0vtsdf" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/box_stacked.tscn" id="123_vlpld"]
+[ext_resource type="PackedScene" uid="uid://dgaov2mu8u81p" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/barrel_large_decorated.tscn" id="124_d7x5o"]
 [ext_resource type="PackedScene" uid="uid://buhwenh050sen" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrier.gltf.glb" id="124_sni7y"]
 [ext_resource type="PackedScene" uid="uid://dukjwmviy5asb" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_pillar.gltf.glb" id="124_tmxgh"]
+[ext_resource type="PackedScene" uid="uid://d3nacaip0hw0q" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/crates_stacked.tscn" id="125_0buue"]
 [ext_resource type="PackedScene" uid="uid://ca0u3u1na0l8k" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrier_half.gltf.glb" id="125_24ryb"]
 [ext_resource type="PackedScene" uid="uid://s3t2gwaienyy" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_Tsplit_sloped.gltf.glb" id="125_b3exh"]
 [ext_resource type="PackedScene" uid="uid://cp6c1lsc7b3ex" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/column.gltf.glb" id="126_c7t7i"]
 [ext_resource type="PackedScene" uid="uid://datdwm64xi8um" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_broken.gltf.glb" id="126_ixlds"]
+[ext_resource type="PackedScene" uid="uid://bt0b38m2r8s4o" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/keg_decorated.tscn" id="126_rn77l"]
 [ext_resource type="PackedScene" uid="uid://ccj4veqdbd1il" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/barrier_colum_half.gltf.glb" id="127_adt22"]
 [ext_resource type="PackedScene" uid="uid://c0cljsgp1c6wg" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_corner_scaffold.gltf.glb" id="127_r0xfu"]
+[ext_resource type="PackedScene" uid="uid://4n7nax1g7r0a" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle_thin_lit.tscn" id="127_ss3m7"]
+[ext_resource type="PackedScene" uid="uid://bmxre5ge3ym7e" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle_lit.tscn" id="128_8dn53"]
 [ext_resource type="PackedScene" uid="uid://dnfo83c3ysqni" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_scaffold.gltf.glb" id="128_n6qr6"]
 [ext_resource type="PackedScene" uid="uid://c8qifq2ifafpy" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_archedwindow_gated_scaffold.gltf.glb" id="129_47nk8"]
+[ext_resource type="PackedScene" uid="uid://bsa0yxwxtcqw6" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle_thin.tscn" id="129_68jia"]
+[ext_resource type="PackedScene" uid="uid://diphswpfes1ni" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle.tscn" id="130_6ey4h"]
 [ext_resource type="PackedScene" uid="uid://c4mb238je0dp3" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_doorway_scaffold.glb" id="130_v6qwo"]
 [ext_resource type="PackedScene" uid="uid://1meb1wcu1sj2" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_window_closed_scaffold.gltf.glb" id="131_5nabo"]
+[ext_resource type="PackedScene" uid="uid://c0uburicirjj6" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle_melted.tscn" id="131_srudu"]
+[ext_resource type="PackedScene" uid="uid://dgpjsa0bqpibt" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/candle_triple.tscn" id="132_erkry"]
 [ext_resource type="PackedScene" uid="uid://7w73onn73t1b" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_window_open_scaffold.gltf.glb" id="132_jdyvd"]
 [ext_resource type="PackedScene" uid="uid://lh6pq3h6ywa4" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_Tsplit.gltf.glb" id="133_754wa"]
+[ext_resource type="PackedScene" uid="uid://bdyj4su56ljyh" path="res://addons/kaykit_dungeon_remastered/Assets/scenes/torch_lit.tscn" id="133_i6ijc"]
 [ext_resource type="PackedScene" uid="uid://djtdyeldteyrl" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_crossing.gltf.glb" id="134_wq1ij"]
 [ext_resource type="PackedScene" uid="uid://c4xne82fdapp5" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_corner_small.gltf.glb" id="135_hk15l"]
 [ext_resource type="PackedScene" uid="uid://1hp5tiks2hdw" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall_half.gltf.glb" id="136_yxp8f"]
@@ -200,13 +200,50 @@
 
 [node name="Layout" type="Node3D"]
 
-[node name="Rubble" type="Node3D" parent="."]
-
-[node name="rubble_half_gltf" parent="Rubble" instance=ExtResource("1_423uy")]
+[node name="RubbleHalf" parent="." instance=ExtResource("1_gbqyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
-[node name="rubble_large_gltf" parent="Rubble" instance=ExtResource("2_3bdxt")]
+[node name="RubbleLarge" parent="." instance=ExtResource("2_dadrp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 0)
+
+[node name="BoxSmallDecorated" parent="." instance=ExtResource("121_jywlr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 27, 0)
+
+[node name="BedDecorated" parent="." instance=ExtResource("122_17s4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 27, 0)
+
+[node name="BoxStacked" parent="." instance=ExtResource("123_vlpld")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 27, 0)
+
+[node name="BarrelLargeDecorated" parent="." instance=ExtResource("124_d7x5o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 27, 0)
+
+[node name="CratesStacked" parent="." instance=ExtResource("125_0buue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 27, 0)
+
+[node name="KegDecorated" parent="." instance=ExtResource("126_rn77l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 27, 0)
+
+[node name="CandleThinLit" parent="." instance=ExtResource("127_ss3m7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 25, 0)
+
+[node name="CandleLit" parent="." instance=ExtResource("128_8dn53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 25, 0)
+
+[node name="CandleThin" parent="." instance=ExtResource("129_68jia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 25, 0)
+
+[node name="Candle" parent="." instance=ExtResource("130_6ey4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 25, 0)
+
+[node name="CandleMelted" parent="." instance=ExtResource("131_srudu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 25, 0)
+
+[node name="CandleTriple" parent="." instance=ExtResource("132_erkry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 25, 0)
+
+[node name="TorchLit" parent="." instance=ExtResource("133_i6ijc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 25, 0)
 
 [node name="BannerRed" type="Node3D" parent="."]
 
@@ -345,245 +382,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 25, 0)
 
 [node name="banner_yellow_gltf" parent="BannerYellow" instance=ExtResource("44_hxlv4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 25, 0)
-
-[node name="Decorations" type="Node3D" parent="."]
-
-[node name="box_small_decorated_gltf" parent="Decorations" instance=ExtResource("45_rvyx4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 27, 0)
-
-[node name="bed_decorated_gltf" parent="Decorations" instance=ExtResource("46_5444m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 27, 0)
-
-[node name="box_stacked_gltf" parent="Decorations" instance=ExtResource("47_qltwx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 27, 0)
-
-[node name="barrel_large_decorated_gltf" parent="Decorations" instance=ExtResource("48_krh8q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 27, 0)
-
-[node name="crates_stacked_gltf" parent="Decorations" instance=ExtResource("49_6rbct")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 27, 0)
-
-[node name="keg_decorated_gltf" parent="Decorations" instance=ExtResource("50_bb3f8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 27, 0)
-
-[node name="candle_thin_lit_gltf" parent="Decorations" instance=ExtResource("51_mn42c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 25, 0)
-
-[node name="candle_lit_gltf" parent="Decorations" instance=ExtResource("52_71dad")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 25, 0)
-
-[node name="candle_thin_gltf" parent="Decorations" instance=ExtResource("53_l4tlw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 25, 0)
-
-[node name="candle_gltf" parent="Decorations" instance=ExtResource("54_1vd8o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 25, 0)
-
-[node name="candle_melted_gltf" parent="Decorations" instance=ExtResource("55_ipg6p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 25, 0)
-
-[node name="candle_triple_gltf" parent="Decorations" instance=ExtResource("56_vblr4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 25, 0)
-
-[node name="torch_lit_gltf" parent="Decorations" instance=ExtResource("57_np4mx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 25, 0)
-
-[node name="torch_gltf" parent="Decorations" instance=ExtResource("58_ekn8j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 25, 0)
-
-[node name="torch_mounted_gltf" parent="Decorations" instance=ExtResource("59_33gl7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 25, 0)
-
-[node name="bottle_C_brown_gltf" parent="Decorations" instance=ExtResource("60_f1v0p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 23, 0)
-
-[node name="bottle_B_brown_gltf" parent="Decorations" instance=ExtResource("61_ni8kt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 23, 0)
-
-[node name="bottle_A_labeled_brown_gltf" parent="Decorations" instance=ExtResource("62_fplwn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 23, 0)
-
-[node name="bottle_A_brown_gltf" parent="Decorations" instance=ExtResource("63_l6i0i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 23, 0)
-
-[node name="bottle_C_green_gltf" parent="Decorations" instance=ExtResource("64_7kfkk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 21, 0)
-
-[node name="bottle_B_green_gltf" parent="Decorations" instance=ExtResource("65_k0i6m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 21, 0)
-
-[node name="bottle_A_labeled_green_gltf" parent="Decorations" instance=ExtResource("66_upoqd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 21, 0)
-
-[node name="bottle_A_green_gltf" parent="Decorations" instance=ExtResource("67_fa382")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 21, 0)
-
-[node name="barrel_large_gltf" parent="Decorations" instance=ExtResource("68_ul2l4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 22, 0)
-
-[node name="barrel_small_gltf" parent="Decorations" instance=ExtResource("69_jp4gn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 22, 0)
-
-[node name="keg_gltf" parent="Decorations" instance=ExtResource("70_4afpv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 22, 0)
-
-[node name="barrel_small_stack_gltf" parent="Decorations" instance=ExtResource("71_vi8ub")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 22, 0)
-
-[node name="shelf_small_candles_gltf" parent="Decorations" instance=ExtResource("72_a8m6u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 19, 0)
-
-[node name="shelf_small_gltf" parent="Decorations" instance=ExtResource("73_5fpv8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 18, 0)
-
-[node name="shelf_large_gltf" parent="Decorations" instance=ExtResource("74_jpxg2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 13, 0)
-
-[node name="shelves_gltf" parent="Decorations" instance=ExtResource("75_ceuf0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 14, 0)
-
-[node name="plate_food_A_gltf" parent="Decorations" instance=ExtResource("76_56x1r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 19, 0)
-
-[node name="plate_small_gltf" parent="Decorations" instance=ExtResource("77_v7yhc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 18, 0)
-
-[node name="key_gltf" parent="Decorations" instance=ExtResource("78_2tps6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 17, 0)
-
-[node name="keyring_hanging_gltf" parent="Decorations" instance=ExtResource("79_ghrbi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 16, 0)
-
-[node name="keyring_gltf" parent="Decorations" instance=ExtResource("80_h1ktm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 16, 0)
-
-[node name="plate_stack_gltf" parent="Decorations" instance=ExtResource("81_t1adx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 19, 0)
-
-[node name="plate_gltf" parent="Decorations" instance=ExtResource("82_b8f2i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 18, 0)
-
-[node name="plate_food_B_gltf" parent="Decorations" instance=ExtResource("83_8hvbp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 17, 0)
-
-[node name="trunk_small_A_gltf" parent="Decorations" instance=ExtResource("84_inqji")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 19, 0)
-
-[node name="trunk_medium_A_gltf" parent="Decorations" instance=ExtResource("85_erq1s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 19, 0)
-
-[node name="trunk_large_A_gltf" parent="Decorations" instance=ExtResource("86_vciw6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 19, 0)
-
-[node name="trunk_small_B_gltf" parent="Decorations" instance=ExtResource("87_oek7l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 17.5, 0)
-
-[node name="trunk_medium_B_gltf" parent="Decorations" instance=ExtResource("88_motq6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 17.5, 0)
-
-[node name="trunk_large_B_gltf" parent="Decorations" instance=ExtResource("89_8tkpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 17.5, 0)
-
-[node name="trunk_small_C_gltf" parent="Decorations" instance=ExtResource("90_1fhmy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 16, 0)
-
-[node name="trunk_medium_C_gltf" parent="Decorations" instance=ExtResource("91_m3suq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 16, 0)
-
-[node name="trunk_large_C_gltf" parent="Decorations" instance=ExtResource("92_ds257")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 16, 0)
-
-[node name="chest" parent="Decorations" instance=ExtResource("93_m3y7b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 19, 0)
-
-[node name="chest_lid" parent="Decorations/chest/chest2" index="0"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, -0.564883)
-
-[node name="chest_gold" parent="Decorations" instance=ExtResource("94_ctqae")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 16, 0)
-
-[node name="chest_gold_lid" parent="Decorations/chest_gold/chest_gold2" index="0"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, -0.564883)
-
-[node name="coin_gltf" parent="Decorations" instance=ExtResource("95_3ijm8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 20, 0)
-
-[node name="coin_stack_small_gltf" parent="Decorations" instance=ExtResource("96_l4w8r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 19, 0)
-
-[node name="coin_stack_medium_gltf" parent="Decorations" instance=ExtResource("97_1debi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 18, 0)
-
-[node name="coin_stack_large_gltf" parent="Decorations" instance=ExtResource("98_bvpfm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 16, 0)
-
-[node name="box_small_gltf" parent="Decorations" instance=ExtResource("99_xiekg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 19, 0)
-
-[node name="box_large_gltf" parent="Decorations" instance=ExtResource("100_lvlp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 19, 0)
-
-[node name="sword_shield_broken_gltf" parent="Decorations" instance=ExtResource("101_bmk7c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 17, 0)
-
-[node name="sword_shield_gltf" parent="Decorations" instance=ExtResource("102_n02dh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15, 0)
-
-[node name="sword_shield_gold_gltf" parent="Decorations" instance=ExtResource("103_okpvx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13, 0)
-
-[node name="table_small_decorated_A_gltf" parent="Decorations" instance=ExtResource("104_0dysp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 13, 0)
-
-[node name="table_small_gltf" parent="Decorations" instance=ExtResource("105_rmnjy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 11, 0)
-
-[node name="table_small_decorated_B_gltf" parent="Decorations" instance=ExtResource("106_ty7rv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 8, 0)
-
-[node name="table_medium_tablecloth_decorated_B_gltf" parent="Decorations" instance=ExtResource("107_6566o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 13, 0)
-
-[node name="table_medium_tablecloth_gltf" parent="Decorations" instance=ExtResource("108_22ac3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 11, 0)
-
-[node name="table_medium_decorated_A_gltf" parent="Decorations" instance=ExtResource("109_eknr6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 13, 0)
-
-[node name="table_medium_gltf" parent="Decorations" instance=ExtResource("110_c4vut")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 11, 0)
-
-[node name="table_long_tablecloth_decorated_A_gltf" parent="Decorations" instance=ExtResource("111_o4o8c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 13, 0)
-
-[node name="table_long_tablecloth_gltf" parent="Decorations" instance=ExtResource("112_ipw0s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 11, 0)
-
-[node name="table_long_decorated_A_gltf" parent="Decorations" instance=ExtResource("113_ntbgt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 13, 0)
-
-[node name="table_long_gltf" parent="Decorations" instance=ExtResource("114_cue3p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 11, 0)
-
-[node name="table_long_broken_gltf" parent="Decorations" instance=ExtResource("115_50p3f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 9, 0)
-
-[node name="table_long_decorated_C_gltf" parent="Decorations" instance=ExtResource("116_2ut7l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 0)
-
-[node name="table_medium_broken_gltf" parent="Decorations" instance=ExtResource("117_ke6pm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 9, 0)
-
-[node name="chair_gltf" parent="Decorations" instance=ExtResource("117_aw0lq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, 0)
-
-[node name="stool_gltf" parent="Decorations" instance=ExtResource("118_8uf5k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 7, 0)
-
-[node name="bed_frame_gltf" parent="Decorations" instance=ExtResource("120_24j5b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 7, 0)
-
-[node name="bed_floor_gltf" parent="Decorations" instance=ExtResource("121_i531f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 7, 0)
 
 [node name="Barrier" type="Node3D" parent="."]
 
@@ -823,5 +621,203 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 
 [node name="floor_tile_extralarge_grates_gltf" parent="Floor" instance=ExtResource("197_r31f0")]
 transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 43, 2, 0)
 
-[editable path="Decorations/chest"]
-[editable path="Decorations/chest_gold"]
+[node name="torch_gltf" parent="." instance=ExtResource("58_ekn8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 25, 0)
+
+[node name="torch_mounted_gltf" parent="." instance=ExtResource("59_33gl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 25, 0)
+
+[node name="bottle_C_brown_gltf" parent="." instance=ExtResource("60_f1v0p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 23, 0)
+
+[node name="bottle_B_brown_gltf" parent="." instance=ExtResource("61_ni8kt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 23, 0)
+
+[node name="bottle_A_labeled_brown_gltf" parent="." instance=ExtResource("62_fplwn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 23, 0)
+
+[node name="bottle_A_brown_gltf" parent="." instance=ExtResource("63_l6i0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 23, 0)
+
+[node name="bottle_C_green_gltf" parent="." instance=ExtResource("64_7kfkk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 21, 0)
+
+[node name="bottle_B_green_gltf" parent="." instance=ExtResource("65_k0i6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 21, 0)
+
+[node name="bottle_A_labeled_green_gltf" parent="." instance=ExtResource("66_upoqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 21, 0)
+
+[node name="bottle_A_green_gltf" parent="." instance=ExtResource("67_fa382")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 21, 0)
+
+[node name="barrel_large_gltf" parent="." instance=ExtResource("68_ul2l4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 22, 0)
+
+[node name="barrel_small_gltf" parent="." instance=ExtResource("69_jp4gn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 22, 0)
+
+[node name="keg_gltf" parent="." instance=ExtResource("70_4afpv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 22, 0)
+
+[node name="barrel_small_stack_gltf" parent="." instance=ExtResource("71_vi8ub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 22, 0)
+
+[node name="shelf_small_candles_gltf" parent="." instance=ExtResource("72_a8m6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 19, 0)
+
+[node name="shelf_small_gltf" parent="." instance=ExtResource("73_5fpv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 18, 0)
+
+[node name="shelf_large_gltf" parent="." instance=ExtResource("74_jpxg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 13, 0)
+
+[node name="shelves_gltf" parent="." instance=ExtResource("75_ceuf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 14, 0)
+
+[node name="plate_food_A_gltf" parent="." instance=ExtResource("76_56x1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 19, 0)
+
+[node name="plate_small_gltf" parent="." instance=ExtResource("77_v7yhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 18, 0)
+
+[node name="key_gltf" parent="." instance=ExtResource("78_2tps6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 17, 0)
+
+[node name="keyring_hanging_gltf" parent="." instance=ExtResource("79_ghrbi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 16, 0)
+
+[node name="keyring_gltf" parent="." instance=ExtResource("80_h1ktm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 16, 0)
+
+[node name="plate_stack_gltf" parent="." instance=ExtResource("81_t1adx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 19, 0)
+
+[node name="plate_gltf" parent="." instance=ExtResource("82_b8f2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 18, 0)
+
+[node name="plate_food_B_gltf" parent="." instance=ExtResource("83_8hvbp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 17, 0)
+
+[node name="trunk_small_A_gltf" parent="." instance=ExtResource("84_inqji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 19, 0)
+
+[node name="trunk_medium_A_gltf" parent="." instance=ExtResource("85_erq1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 19, 0)
+
+[node name="trunk_large_A_gltf" parent="." instance=ExtResource("86_vciw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 19, 0)
+
+[node name="trunk_small_B_gltf" parent="." instance=ExtResource("87_oek7l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 17.5, 0)
+
+[node name="trunk_medium_B_gltf" parent="." instance=ExtResource("88_motq6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 17.5, 0)
+
+[node name="trunk_large_B_gltf" parent="." instance=ExtResource("89_8tkpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 17.5, 0)
+
+[node name="trunk_small_C_gltf" parent="." instance=ExtResource("90_1fhmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 16, 0)
+
+[node name="trunk_medium_C_gltf" parent="." instance=ExtResource("91_m3suq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 16, 0)
+
+[node name="trunk_large_C_gltf" parent="." instance=ExtResource("92_ds257")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 16, 0)
+
+[node name="chest" parent="." instance=ExtResource("93_m3y7b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 19, 0)
+
+[node name="chest_lid" parent="chest/chest2" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, -0.564883)
+
+[node name="chest_gold" parent="." instance=ExtResource("94_ctqae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 16, 0)
+
+[node name="chest_gold_lid" parent="chest_gold/chest_gold2" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, -0.564883)
+
+[node name="coin_gltf" parent="." instance=ExtResource("95_3ijm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 20, 0)
+
+[node name="coin_stack_small_gltf" parent="." instance=ExtResource("96_l4w8r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 19, 0)
+
+[node name="coin_stack_medium_gltf" parent="." instance=ExtResource("97_1debi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 18, 0)
+
+[node name="coin_stack_large_gltf" parent="." instance=ExtResource("98_bvpfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 16, 0)
+
+[node name="box_small_gltf" parent="." instance=ExtResource("99_xiekg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 19, 0)
+
+[node name="box_large_gltf" parent="." instance=ExtResource("100_lvlp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 19, 0)
+
+[node name="sword_shield_broken_gltf" parent="." instance=ExtResource("101_bmk7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 17, 0)
+
+[node name="sword_shield_gltf" parent="." instance=ExtResource("102_n02dh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15, 0)
+
+[node name="sword_shield_gold_gltf" parent="." instance=ExtResource("103_okpvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13, 0)
+
+[node name="table_small_decorated_A_gltf" parent="." instance=ExtResource("104_0dysp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 13, 0)
+
+[node name="table_small_gltf" parent="." instance=ExtResource("105_rmnjy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 11, 0)
+
+[node name="table_small_decorated_B_gltf" parent="." instance=ExtResource("106_ty7rv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 8, 0)
+
+[node name="table_medium_tablecloth_decorated_B_gltf" parent="." instance=ExtResource("107_6566o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 13, 0)
+
+[node name="table_medium_tablecloth_gltf" parent="." instance=ExtResource("108_22ac3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 11, 0)
+
+[node name="table_medium_decorated_A_gltf" parent="." instance=ExtResource("109_eknr6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 13, 0)
+
+[node name="table_medium_gltf" parent="." instance=ExtResource("110_c4vut")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 11, 0)
+
+[node name="table_long_tablecloth_decorated_A_gltf" parent="." instance=ExtResource("111_o4o8c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 13, 0)
+
+[node name="table_long_tablecloth_gltf" parent="." instance=ExtResource("112_ipw0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 11, 0)
+
+[node name="table_long_decorated_A_gltf" parent="." instance=ExtResource("113_ntbgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 13, 0)
+
+[node name="table_long_gltf" parent="." instance=ExtResource("114_cue3p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 11, 0)
+
+[node name="table_long_broken_gltf" parent="." instance=ExtResource("115_50p3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 9, 0)
+
+[node name="table_long_decorated_C_gltf" parent="." instance=ExtResource("116_2ut7l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 0)
+
+[node name="table_medium_broken_gltf" parent="." instance=ExtResource("117_ke6pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 9, 0)
+
+[node name="chair_gltf" parent="." instance=ExtResource("117_aw0lq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, 0)
+
+[node name="stool_gltf" parent="." instance=ExtResource("118_8uf5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 7, 0)
+
+[node name="bed_frame_gltf" parent="." instance=ExtResource("120_24j5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 7, 0)
+
+[node name="bed_floor_gltf" parent="." instance=ExtResource("121_i531f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 7, 0)
+
+[editable path="chest"]
+[editable path="chest_gold"]

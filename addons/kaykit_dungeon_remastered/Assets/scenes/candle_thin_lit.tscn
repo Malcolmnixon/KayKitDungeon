@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://4n7nax1g7r0a"]
+
+[ext_resource type="ArrayMesh" uid="uid://cr2xhcrqqnpj5" path="res://addons/kaykit_dungeon_remastered/Assets/mesh/candle_thin_lit.mesh" id="1_2fyr1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e3iv1"]
+points = PackedVector3Array(-0.0965945, 0, -0.0170367, -0.0849457, 0, 0.0490382, -0.0965945, 0.765059, -0.0170367, -0.0630663, 0, -0.0751409, -0.0335471, 0, 0.0921694, -0.0849457, 0.765059, 0.0490382, -0.0630663, 0.765059, -0.0751409, -0.0747151, 0.882657, -0.0131817, -1.49012e-08, 0, -0.0980846, 0.0335282, 0, 0.0921694, -0.0335471, 0.765059, 0.0921694, -0.0656948, 0.882657, 0.0379202, -1.49012e-08, 0.765059, -0.0980846, -0.04877, 0.882657, -0.0581193, -1.49012e-08, 0.882657, -0.0758672, -1.49012e-08, 1.05108, -1.51694e-05, 0.0630473, 0, -0.0751409, 0.0849267, 0, 0.0490382, 0.0335282, 0.765059, 0.0921694, -0.0259451, 0.882657, 0.0712742, 0.0630473, 0.765059, -0.0751409, 0.0487511, 0.882657, -0.0581193, 0.0656759, 0.882657, 0.0379202, 0.0746962, 0.882657, -0.0131817, 0.0259262, 0.882657, 0.0712742, 0.0965945, 0, -0.0170367, 0.0849267, 0.765059, 0.0490382, 0.0965945, 0.765059, -0.0170367)
+
+[node name="CandleThinLit" type="MeshInstance3D"]
+mesh = ExtResource("1_2fyr1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_e3iv1")

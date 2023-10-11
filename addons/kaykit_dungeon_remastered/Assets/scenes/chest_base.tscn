@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bi3ktwel7x6l"]
 
-[ext_resource type="ArrayMesh" uid="uid://do1i141f7v5nv" path="res://addons/kaykit_dungeon_remastered/Assets/mesh/chest_base.tres" id="1_7ojqb"]
+[ext_resource type="ArrayMesh" uid="uid://0tplqbm7r77c" path="res://addons/kaykit_dungeon_remastered/Assets/mesh/chest_base.mesh" id="1_beh67"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qkbqp"]
 points = PackedVector3Array(0.8, 0.6, 0.5, 0.8, 0.6, 0.4, -0.8, 0.6, 0.5, 0.8, -2.38419e-07, 0.5, 0.8, -2.38419e-07, 0.4, -0.8, 0.6, 0.4, -0.8, -2.38419e-07, 0.5, -0.8, -2.38419e-07, 0.4)
@@ -53,4 +53,4 @@ shape = SubResource("ConvexPolygonShape3D_7hwqx")
 shape = SubResource("ConvexPolygonShape3D_54rlw")
 
 [node name="chest_base" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_7ojqb")
+mesh = ExtResource("1_beh67")

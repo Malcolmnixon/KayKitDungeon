@@ -34,6 +34,11 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "res://addons/kaykit_dungeon_remastered/Assets/texture/dungeon_material.tres"
 }
+},
+"nodes": {
+"PATH:torch_mounted": {
+"generate/physics": true
+}
 }
 }
 gltf/embedded_image_handling=0

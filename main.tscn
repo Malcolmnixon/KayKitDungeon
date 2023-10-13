@@ -1,0 +1,75 @@
+[gd_scene load_steps=12 format=3 uid="uid://pxcwo7hupown"]
+
+[ext_resource type="PackedScene" uid="uid://bx1xdisoqo1f6" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_tac_glove_low.tscn" id="1_4efbr"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_ghybu"]
+[ext_resource type="PackedScene" uid="uid://chumpejwiub7f" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_tac_glove_low.tscn" id="2_w8t8m"]
+[ext_resource type="PackedScene" uid="uid://bq1b3mmktrsy3" path="res://addons/kaykit_dungeon_remastered/Assets/demo.tscn" id="3_4fowu"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_1goy5"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_igj0p"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_ujra0"]
+[ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_wdmfn"]
+[ext_resource type="Script" path="res://addons/godot-xr-tools/overrides/ground_physics_settings.gd" id="7_d1ah0"]
+
+[sub_resource type="Resource" id="Resource_7x43o"]
+script = ExtResource("7_d1ah0")
+flags = 20
+move_drag = 5.0
+move_traction = 30.0
+stop_on_slope = true
+move_max_slope = 50.0
+jump_max_slope = 45.0
+jump_velocity = 6.0
+bounciness = 0.0
+bounce_threshold = 1.0
+
+[sub_resource type="Environment" id="Environment_vsywq"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.388235, 0.388235, 0.388235, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.103294, 0)
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 1, 0)
+tracker = &"left_hand"
+pose = &"aim"
+
+[node name="LeftHand" parent="XROrigin3D/LeftController" instance=ExtResource("1_4efbr")]
+
+[node name="MovementDirect" parent="XROrigin3D/LeftController" instance=ExtResource("2_ghybu")]
+strafe = true
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1, 0)
+tracker = &"right_hand"
+pose = &"aim"
+
+[node name="RightHand" parent="XROrigin3D/RightController" instance=ExtResource("2_w8t8m")]
+
+[node name="MovementDirect" parent="XROrigin3D/RightController" instance=ExtResource("2_ghybu")]
+
+[node name="MovementTurn" parent="XROrigin3D/RightController" instance=ExtResource("4_1goy5")]
+
+[node name="MovementJump" parent="XROrigin3D/RightController" instance=ExtResource("5_wdmfn")]
+jump_button_action = "ax_button"
+
+[node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_ujra0")]
+physics = SubResource("Resource_7x43o")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World"]
+environment = SubResource("Environment_vsywq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World"]
+transform = Transform3D(0.866025, -0.482963, 0.12941, 0, 0.258819, 0.965926, -0.5, -0.836516, 0.224144, 0, 9, 0)
+
+[node name="Demo" parent="World" instance=ExtResource("3_4fowu")]
+
+[node name="StartXR" parent="." instance=ExtResource("4_igj0p")]

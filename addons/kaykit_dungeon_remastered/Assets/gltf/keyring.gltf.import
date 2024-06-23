@@ -39,7 +39,8 @@ _subresources={
 "nodes": {
 "PATH:keyring": {
 "decomposition/precision": 10,
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 0
 }
 }
 }

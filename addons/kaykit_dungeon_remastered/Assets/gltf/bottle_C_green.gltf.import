@@ -39,7 +39,8 @@ _subresources={
 "nodes": {
 "PATH:bottle_C_green": {
 "decomposition/precision": 8,
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 0
 }
 }
 }

@@ -39,7 +39,8 @@ _subresources={
 "nodes": {
 "PATH:barrel_small_stack": {
 "decomposition/precision": 9,
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 0
 }
 }
 }

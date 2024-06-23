@@ -1,25 +1,25 @@
 [gd_scene load_steps=5 format=3 uid="uid://dp4s1f4bpvvrh"]
 
-[ext_resource type="PackedScene" uid="uid://dypbxdejcjevk" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall.gltf.glb" id="1_ay6u8"]
+[ext_resource type="PackedScene" uid="uid://b57s12ofb7hvf" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall.gltf" id="1_18d06"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4g2eu"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n6c0e"]
 points = PackedVector3Array(-2, 0, -0.5, -2, 0.25, -0.5, 2, 0, -0.5, -2, 0, 0.5, -2, 0.5, -0.25, 2, 0.25, -0.5, 2, 0, 0.5, -2, 0.25, 0.5, -2, 0.5, 0.25, 2, 0.5, -0.25, 2, 0.25, 0.5, 2, 0.5, 0.25)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ri4el"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1gbvo"]
 points = PackedVector3Array(-2, 3.44996, -0.5, -2, 3.99992, -0.5, 2, 3.44996, -0.5, -2, 3.2, -0.25, -2, 3.99992, 0.5, 2, 3.99992, -0.5, 2, 3.2, -0.25, -2, 3.2, 0.25, -2, 3.44996, 0.5, 2, 3.99992, 0.5, 2, 3.2, 0.25, 2, 3.44996, 0.5)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hawo4"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s54c0"]
 points = PackedVector3Array(2, 4, 0.249951, 2, 4, -0.25, -2, 4, 0.249951, 2, 0, 0.249951, 2, 0, -0.25, -2, 4, -0.25, -2, 0, 0.249951, -2, 0, -0.25)
 
-[node name="wall_gltf" instance=ExtResource("1_ay6u8")]
+[node name="wall" instance=ExtResource("1_18d06")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_4g2eu")
+shape = SubResource("ConvexPolygonShape3D_n6c0e")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="wall/StaticBody3D" index="1"]
-shape = SubResource("ConvexPolygonShape3D_ri4el")
+shape = SubResource("ConvexPolygonShape3D_1gbvo")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="wall/StaticBody3D" index="2"]
-shape = SubResource("ConvexPolygonShape3D_hawo4")
+shape = SubResource("ConvexPolygonShape3D_s54c0")

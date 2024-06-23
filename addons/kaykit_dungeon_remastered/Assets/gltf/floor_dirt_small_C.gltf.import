@@ -1,0 +1,49 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://nap62ebtqx4u"
+path="res://.godot/imported/floor_dirt_small_C.gltf-81c60801d1f9ff8ac92f18cf5bfe50b7.scn"
+
+[deps]
+
+source_file="res://addons/kaykit_dungeon_remastered/Assets/gltf/floor_dirt_small_C.gltf"
+dest_files=["res://.godot/imported/floor_dirt_small_C.gltf-81c60801d1f9ff8ac92f18cf5bfe50b7.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"texture": {
+"use_external/enabled": true,
+"use_external/path": "res://addons/kaykit_dungeon_remastered/Assets/texture/dungeon_material.tres"
+}
+},
+"nodes": {
+"PATH:floor_dirt_small_C": {
+"generate/physics": true,
+"physics/shape_type": 3,
+"primitive/position": Vector3(0, -0.04, 0),
+"primitive/size": Vector3(2, 0.12, 2)
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

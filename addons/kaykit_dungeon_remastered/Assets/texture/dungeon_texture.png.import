@@ -3,21 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m0voelkni0wr"
-path.s3tc="res://.godot/imported/dungeon_texture.png-7e625c463a0dc6eb97c59f8f3d2a2b07.s3tc.ctex"
+path="res://.godot/imported/dungeon_texture.png-7e625c463a0dc6eb97c59f8f3d2a2b07.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://addons/kaykit_dungeon_remastered/Assets/texture/dungeon_texture.png"
-dest_files=["res://.godot/imported/dungeon_texture.png-7e625c463a0dc6eb97c59f8f3d2a2b07.s3tc.ctex"]
+dest_files=["res://.godot/imported/dungeon_texture.png-7e625c463a0dc6eb97c59f8f3d2a2b07.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=4
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

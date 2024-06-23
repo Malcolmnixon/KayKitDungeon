@@ -1,0 +1,65 @@
+# Workflow to automatically create deliverables
+name: Build on push
+
+on:
+  [push, pull_request]
+
+jobs:
+  build:
+    name: Assembling artifacts
+    runs-on: ubuntu-latest
+
+    # Note, to satisfy the asset library we need to make sure our zip files have a root folder
+    # this is why we checkout into demo/kaykit_dungeon_remastered
+    # and build plugin/kaykit_dungeon_remastered
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        path: demo/kaykit_dungeon_remastered
+
+
+    - name: Create KayKit Dungeon Remastered
+      run: |
+        mkdir plugin
+        mkdir plugin/kaykit_dungeon_remastered
+        mkdir plugin/kaykit_dungeon_remastered/addons
+        cp -r demo/kaykit_dungeon_remastered/addons/kaykit_dungeon_remastered plugin/kaykit_dungeon_remastered/addons
+        rm -rf demo/kaykit_dungeon_remastered/.git
+        rm -rf demo/kaykit_dungeon_remastered/.github
+
+
+    - name: Create KayKit Dungeon Remastered library artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: kaykit_dungeon_remastered
+        path: plugin
+
+
+    - name: Create KayKit Dungeon Remastered demo artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: kaykit_dungeon_remastered_demo
+        path: demo
+
+
+    - name: Zip asset
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+      run: |
+        cd plugin
+        zip -qq -r ../kaykit_dungeon_remastered.zip kaykit_dungeon_remastered
+        cd ../demo
+        zip -qq -r ../kaykit_dungeon_remastered_demo.zip kaykit_dungeon_remastered
+        cd ..
+
+
+    - name: Create and upload asset
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        artifacts: "kaykit_dungeon_remastered.zip,kaykit_dungeon_remastered_demo.zip"
+        omitNameDuringUpdate: true
+        omitBodyDuringUpdate: true
+        token: ${{ secrets.GITHUB_TOKEN }}

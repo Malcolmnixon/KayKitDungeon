@@ -39,7 +39,8 @@ _subresources={
 "nodes": {
 "PATH:table_long_broken": {
 "decomposition/precision": 9,
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 0
 }
 }
 }

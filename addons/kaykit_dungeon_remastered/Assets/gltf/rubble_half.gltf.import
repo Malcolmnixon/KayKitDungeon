@@ -38,7 +38,8 @@ _subresources={
 },
 "nodes": {
 "PATH:rubble_half": {
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 0
 }
 }
 }
